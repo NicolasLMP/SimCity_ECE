@@ -223,32 +223,3 @@ int map(){
     return 1;
 }
 
-
-int main()
-{
-    initAlleg();
-    int test= afficherDebut();
-    if (test==1){
-            int test2= menu();
-            if (test2==1){
-                    int test3= choix();
-                    if (test3==1){
-                        allegro_exit();
-                return 0;
-                    }
-
-            }
-            if (test2==2){
-                    int test3= map();
-                    if (test3==1){
-                       allegro_exit();
-                return 0;
-                    }
-
-
-            }
-    }
-    allegro_exit();
-    return 0;
-}
-END_OF_MAIN();
